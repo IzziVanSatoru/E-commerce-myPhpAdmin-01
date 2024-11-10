@@ -1,0 +1,42 @@
+```
+└── 📁ecommerce-project
+    └── 📁docker
+        └── 📁mysql
+            └── 📁init_db
+                └── init.sql
+            └── Dockerfile
+        └── 📁nginx
+            └── nginx.conf
+        └── 📁php
+            └── Dockerfile
+    └── 📁public
+        └── 📁css
+            └── style.css
+        └── index.php
+    └── 📁src
+        └── 📁Api
+            └── StripeAPI.php
+        └── 📁backend
+            └── 📁sql
+                ├── queries
+            └── Database.php
+        └── 📁Components
+            └── Footer.php
+            └── Navbar.php
+        └── 📁Pages
+            └── Home.php
+            └── Payment.php
+            └── ProductCart.php
+    └── 📁vendor
+        └── 📁composer
+            └── autoload_classmap.php
+            └── autoload_namespaces.php
+            └── autoload_psr4.php
+            └── autoload_real.php
+            └── autoload_static.php
+            └── ClassLoader.php
+            └── LICENSE
+        └── autoload.php
+    └── composer.json
+    └── docker-compose.yml
+```

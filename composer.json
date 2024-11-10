@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Pages\\": "src/Pages/",
+            "Components\\": "src/Components/",
+            "Api\\": "src/Api/",
+            "Backend\\": "src/backend/"
+        }
+    }
+}

@@ -1,0 +1,177 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+    background-color: #F3EAD7; /* Warna krem lembut untuk nuansa Jepang */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Warna untuk gaya Jepang */
+:root {
+    --soft-pink: #FFC1E3;
+    --soft-blue: #B3D1FF;
+    --soft-green: #A6E3A1;
+    --dark-blue: #1B3B5F;
+    --neutral-gray: #E5E5E5;
+}
+
+/* Efek 3D umum */
+.three-d-effect {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.three-d-effect:hover {
+    transform: translateY(-5px);
+}
+
+/* Navbar 3D */
+.navbar {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.navbar:hover {
+    transform: translateY(-5px);
+}
+
+.navbar-logo a {
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-links li a {
+    color: var(--dark-blue);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.navbar-links li a:hover {
+    background-color: var(--soft-blue);
+    color: #fff;
+}
+
+/* Footer 3D */
+.footer {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.footer p {
+    color: var(--dark-blue);
+}
+
+/* Halaman Umum */
+.page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15), -5px -5px 15px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.page:hover {
+    transform: translateY(-5px);
+}
+
+/* Product Card */
+.product-card {
+    background-color: var(--soft-pink);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card h3 {
+    color: var(--dark-blue);
+}
+
+/* Button Styles */
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.button-primary {
+    background-color: var(--soft-blue);
+}
+
+.button-primary:hover {
+    background-color: var(--dark-blue);
+}
+
+/* Alert Success & Error */
+.alert-success, .alert-error {
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: var(--soft-green);
+    color: #2F6627;
+}
+
+.alert-error {
+    background-color: #FFD1D1;
+    color: #D8000C;
+}
+
+/* Animasi Halus */
+.animated {
+    transition: all 0.3s ease-in-out;
+}
+
+.animated:hover {
+    transform: scale(1.03) rotate(1deg);
+}
